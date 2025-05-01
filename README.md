@@ -41,7 +41,7 @@ pip install matplotlib numpy
 ├── OPResearch.py                         Main program file
 ├── proposal1.txt to proposal10.txt   Input graph files
 ├── README.md
-
+├── INT24-trace1-FF.txt to INT24-trace10-MIN.txt execution traces
 
  How to Run
 
@@ -52,9 +52,7 @@ python code.ipnyb
 
 
 You will be prompted to:
-1. Enter your group (e.g., B)
-2. Enter your team number (e.g., 4)
-3. Choose one of the following options:
+1. Choose one of the following options:
    - 1: Max Flow with Ford-Fulkerson
    - 2: Max Flow with Push-Relabel
    - 3: Min-Cost Flow
@@ -113,7 +111,7 @@ Examples:
 - `C1-trace7-MIN.txt` (Min-Cost Flow)
 
  Authors
-Lamotte--Chapon Paul-Emile, Iness Bennai
+Lamotte--Chapon Paul-Emile, Iness Bennai, Tom Sancesario, Max Chartier, Maxime Musquin
 Project developed for the Operations Research course (SM602I).
 
 
