@@ -38,7 +38,7 @@ pip install matplotlib numpy
 
 
 .
-├── code.ipynb                         Main program file
+├── OPResearch.py                         Main program file
 ├── proposal1.txt to proposal10.txt   Input graph files
 ├── README.md
 
