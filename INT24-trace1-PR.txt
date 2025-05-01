@@ -1,0 +1,108 @@
+Enter the number of the graph (1 to 5) : 1
+
+Capacity Matrix
+     0      9      5      7      0      0      0      0
+     0      0      6      0      6      0      0      0
+     0      0      0      0      0      7      0      0
+     0      0      0      0      0      2      8      0
+     0      0      3      0      0      0      0      8
+     0      0      0      0      0      0      0     10
+     0      0      0      0      0      3      0      5
+     0      0      0      0      0      0      0      0
+
+Initial height: [8, 0, 0, 0, 0, 0, 0, 0]
+Initial excess: [0, 0, 0, 0, 0, 0, 0, 0]
+
+After initialization from source:
+Excess: [0, 9, 5, 7, 0, 0, 0, 0]
+Iteration 1: Relabel node 1 to height 1
+Height: [8, 1, 0, 0, 0, 0, 0, 0]
+Iteration 2: Push 6 from 1 to 2
+Excess after push: [0, 3, 11, 7, 0, 0, 0, 0]
+Height: [8, 1, 0, 0, 0, 0, 0, 0]
+Iteration 3: Push 3 from 1 to 4
+Excess after push: [0, 0, 11, 7, 3, 0, 0, 0]
+Height: [8, 1, 0, 0, 0, 0, 0, 0]
+Iteration 4: Relabel node 2 to height 1
+Height: [8, 1, 1, 0, 0, 0, 0, 0]
+Iteration 5: Push 7 from 2 to 5
+Excess after push: [0, 0, 4, 7, 3, 7, 0, 0]
+Height: [8, 1, 1, 0, 0, 0, 0, 0]
+Iteration 6: Relabel node 2 to height 2
+Height: [8, 1, 2, 0, 0, 0, 0, 0]
+Iteration 7: Push 4 from 2 to 1
+Excess after push: [0, 4, 0, 7, 3, 7, 0, 0]
+Height: [8, 1, 2, 0, 0, 0, 0, 0]
+Iteration 8: Push 3 from 1 to 4
+Excess after push: [0, 1, 0, 7, 6, 7, 0, 0]
+Height: [8, 1, 2, 0, 0, 0, 0, 0]
+Iteration 9: Relabel node 1 to height 3
+Height: [8, 3, 2, 0, 0, 0, 0, 0]
+Iteration 10: Push 1 from 1 to 2
+Excess after push: [0, 0, 1, 7, 6, 7, 0, 0]
+Height: [8, 3, 2, 0, 0, 0, 0, 0]
+Iteration 11: Relabel node 2 to height 4
+Height: [8, 3, 4, 0, 0, 0, 0, 0]
+Iteration 12: Push 1 from 2 to 1
+Excess after push: [0, 1, 0, 7, 6, 7, 0, 0]
+Height: [8, 3, 4, 0, 0, 0, 0, 0]
+Iteration 13: Relabel node 1 to height 5
+Height: [8, 5, 4, 0, 0, 0, 0, 0]
+Iteration 14: Push 1 from 1 to 2
+Excess after push: [0, 0, 1, 7, 6, 7, 0, 0]
+Height: [8, 5, 4, 0, 0, 0, 0, 0]
+Iteration 15: Relabel node 2 to height 6
+Height: [8, 5, 6, 0, 0, 0, 0, 0]
+Iteration 16: Push 1 from 2 to 1
+Excess after push: [0, 1, 0, 7, 6, 7, 0, 0]
+Height: [8, 5, 6, 0, 0, 0, 0, 0]
+Iteration 17: Relabel node 1 to height 7
+Height: [8, 7, 6, 0, 0, 0, 0, 0]
+Iteration 18: Push 1 from 1 to 2
+Excess after push: [0, 0, 1, 7, 6, 7, 0, 0]
+Height: [8, 7, 6, 0, 0, 0, 0, 0]
+Iteration 19: Relabel node 2 to height 8
+Height: [8, 7, 8, 0, 0, 0, 0, 0]
+Iteration 20: Push 1 from 2 to 1
+Excess after push: [0, 1, 0, 7, 6, 7, 0, 0]
+Height: [8, 7, 8, 0, 0, 0, 0, 0]
+Iteration 21: Relabel node 1 to height 9
+Height: [8, 9, 8, 0, 0, 0, 0, 0]
+Iteration 22: Push 1 from 1 to 0
+Excess after push: [1, 0, 0, 7, 6, 7, 0, 0]
+Height: [8, 9, 8, 0, 0, 0, 0, 0]
+Iteration 23: Relabel node 3 to height 1
+Height: [8, 9, 8, 1, 0, 0, 0, 0]
+Iteration 24: Push 2 from 3 to 5
+Excess after push: [1, 0, 0, 5, 6, 9, 0, 0]
+Height: [8, 9, 8, 1, 0, 0, 0, 0]
+Iteration 25: Push 5 from 3 to 6
+Excess after push: [1, 0, 0, 0, 6, 9, 5, 0]
+Height: [8, 9, 8, 1, 0, 0, 0, 0]
+Iteration 26: Relabel node 4 to height 1
+Height: [8, 9, 8, 1, 1, 0, 0, 0]
+Iteration 27: Push 6 from 4 to 7
+Excess after push: [1, 0, 0, 0, 0, 9, 5, 6]
+Height: [8, 9, 8, 1, 1, 0, 0, 0]
+Iteration 28: Relabel node 5 to height 1
+Height: [8, 9, 8, 1, 1, 1, 0, 0]
+Iteration 29: Push 9 from 5 to 7
+Excess after push: [1, 0, 0, 0, 0, 0, 5, 15]
+Height: [8, 9, 8, 1, 1, 1, 0, 0]
+Iteration 30: Relabel node 6 to height 1
+Height: [8, 9, 8, 1, 1, 1, 1, 0]
+Iteration 31: Push 5 from 6 to 7
+Excess after push: [1, 0, 0, 0, 0, 0, 0, 20]
+Height: [8, 9, 8, 1, 1, 1, 1, 0]
+
+Final flow matrix:
+[0, 8, 5, 7, 0, 0, 0, 0]
+[-8, 0, 2, 0, 6, 0, 0, 0]
+[-5, -2, 0, 0, 0, 7, 0, 0]
+[-7, 0, 0, 0, 0, 2, 5, 0]
+[0, -6, 0, 0, 0, 0, 0, 6]
+[0, 0, -7, -2, 0, 0, 0, 9]
+[0, 0, 0, -5, 0, 0, 0, 5]
+[0, 0, 0, 0, -6, -9, -5, 0]
+
+Max Flow (Push-Relabel) : 20

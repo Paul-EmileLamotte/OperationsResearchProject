@@ -1,0 +1,125 @@
+Enter the number of the graph (6 to 10) : 8
+
+Capacity Matrix
+     0     31     25     27      0      0      0
+     0      0     20      0     12      0      0
+     0      0      0      0      6      0      0
+     0      0     30      0      0     35      0
+     0      0      0      0      0      0     30
+     0      0     11      0     10      0     40
+     0      0      0      0      0      0      0
+
+Cost Matrix
+     0      8      4     15      0      0      0
+     0      0      7      0     16      0      0
+     0      0      0      0      3      0      0
+     0      0      8      0      0     20      0
+     0      0      0      0      0      0     22
+     0      0     14      0     15      0     15
+     0      0      0      0      0      0      0
+
+Initial residual graph:
+
+Residual Graph
+     0     31     25     27      0      0      0
+     0      0     20      0     12      0      0
+     0      0      0      0      6      0      0
+     0      0     30      0      0     35      0
+     0      0      0      0      0      0     30
+     0      0     11      0     10      0     40
+     0      0      0      0      0      0      0
+
+Iteration 1:
+Breadth-first search:
+Π(1) = 0
+Π(4) = 1
+Π(6) = 4
+Improving path found: 0 → 1 → 4 → 6
+Flow in path: 12
+Residual graph after this iteration:
+
+Residual Graph
+     0     19     25     27      0      0      0
+    12      0     20      0      0      0      0
+     0      0      0      0      6      0      0
+     0      0     30      0      0     35      0
+     0     12      0      0      0      0     18
+     0      0     11      0     10      0     40
+     0      0      0      0     12      0      0
+
+Iteration 2:
+Breadth-first search:
+Π(2) = 0
+Π(4) = 2
+Π(6) = 4
+Improving path found: 0 → 2 → 4 → 6
+Flow in path: 6
+Residual graph after this iteration:
+
+Residual Graph
+     0     19     19     27      0      0      0
+    12      0     20      0      0      0      0
+     6      0      0      0      0      0      0
+     0      0     30      0      0     35      0
+     0     12      6      0      0      0     12
+     0      0     11      0     10      0     40
+     0      0      0      0     18      0      0
+
+Iteration 3:
+Breadth-first search:
+Π(3) = 0
+Π(5) = 3
+Π(6) = 5
+Improving path found: 0 → 3 → 5 → 6
+Flow in path: 27
+Residual graph after this iteration:
+
+Residual Graph
+     0     19     19      0      0      0      0
+    12      0     20      0      0      0      0
+     6      0      0      0      0      0      0
+    27      0     30      0      0      8      0
+     0     12      6      0      0      0     12
+     0      0     11     27     10      0     13
+     0      0      0      0     18     27      0
+
+Final residual graph:
+
+Final Residual Graph
+     0     19     19      0      0      0      0
+    12      0     20      0      0      0      0
+     6      0      0      0      0      0      0
+    27      0     30      0      0      8      0
+     0     12      6      0      0      0     12
+     0      0     11     27     10      0     13
+     0      0      0      0     18     27      0
+Max Flow = 45
+
+Table from Bellman's algorithm:
+Iteration 0: [0, inf, inf, inf, inf, inf, inf]
+Iteration 1: [0, 8, 4, 15, inf, inf, inf]
+Iteration 2: [0, 8, 4, 15, 7, 35, inf]
+Iteration 3: [0, 8, 4, 15, 7, 35, 29]
+Iteration 4: [0, 8, 4, 15, 7, 35, 29]
+Iteration 5: [0, 8, 4, 15, 7, 35, 29]
+Iteration 6: [0, 8, 4, 15, 7, 35, 29]
+
+Table from Bellman's algorithm:
+Iteration 0: [0, inf, inf, inf, inf, inf, inf]
+Iteration 1: [0, 8, 4, 15, inf, inf, inf]
+Iteration 2: [0, 8, 4, 15, 24, 35, inf]
+Iteration 3: [0, 8, 4, 15, 24, 35, 46]
+Iteration 4: [0, 8, 4, 15, 24, 35, 46]
+Iteration 5: [0, 8, 4, 15, 24, 35, 46]
+Iteration 6: [0, 8, 4, 15, 24, 35, 46]
+
+Table from Bellman's algorithm:
+Iteration 0: [0, inf, inf, inf, inf, inf, inf]
+Iteration 1: [0, 8, 4, 15, inf, inf, inf]
+Iteration 2: [0, 8, 4, 15, inf, 35, inf]
+Iteration 3: [0, 8, 4, 15, 50, 35, 50]
+Iteration 4: [0, 8, 4, 15, 50, 35, 50]
+Iteration 5: [0, 8, 4, 15, 50, 35, 50]
+Iteration 6: [0, 8, 4, 15, 50, 35, 50]
+
+Min-Cost Flow for a flow of 22 : 926

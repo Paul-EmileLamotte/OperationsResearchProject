@@ -1,0 +1,200 @@
+Enter the number of the graph (1 to 5) : 2
+
+Capacity Matrix
+     0     16      3      8      0      0      0      0      0      0
+     0      0      3      0      3      3      4      0      0      0
+     0      0      0      7      0      5      0      0      0      0
+     0      0      0      0      0      0      0      0      7      0
+     0      0      0      0      0      0      1      8      0      0
+     0      0      0      0      8      0      0      0      0      0
+     0      0      0      0      0      0      0      0      0      8
+     0      0      0      0      0      0      3      0      4      6
+     0      0      0      0      0      4      0      0      0      8
+     0      0      0      0      0      0      0      0      0      0
+
+Initial residual graph:
+
+Residual Graph
+     0     16      3      8      0      0      0      0      0      0
+     0      0      3      0      3      3      4      0      0      0
+     0      0      0      7      0      5      0      0      0      0
+     0      0      0      0      0      0      0      0      7      0
+     0      0      0      0      0      0      1      8      0      0
+     0      0      0      0      8      0      0      0      0      0
+     0      0      0      0      0      0      0      0      0      8
+     0      0      0      0      0      0      3      0      4      6
+     0      0      0      0      0      4      0      0      0      8
+     0      0      0      0      0      0      0      0      0      0
+
+Iteration 1:
+Breadth-first search:
+Π(1) = 0
+Π(6) = 1
+Π(9) = 6
+Improving path found: 0 → 1 → 6 → 9
+Flow in path: 4
+Residual graph after this iteration:
+
+Residual Graph
+     0     12      3      8      0      0      0      0      0      0
+     4      0      3      0      3      3      0      0      0      0
+     0      0      0      7      0      5      0      0      0      0
+     0      0      0      0      0      0      0      0      7      0
+     0      0      0      0      0      0      1      8      0      0
+     0      0      0      0      8      0      0      0      0      0
+     0      4      0      0      0      0      0      0      0      4
+     0      0      0      0      0      0      3      0      4      6
+     0      0      0      0      0      4      0      0      0      8
+     0      0      0      0      0      0      4      0      0      0
+
+Iteration 2:
+Breadth-first search:
+Π(3) = 0
+Π(8) = 3
+Π(9) = 8
+Improving path found: 0 → 3 → 8 → 9
+Flow in path: 7
+Residual graph after this iteration:
+
+Residual Graph
+     0     12      3      1      0      0      0      0      0      0
+     4      0      3      0      3      3      0      0      0      0
+     0      0      0      7      0      5      0      0      0      0
+     7      0      0      0      0      0      0      0      0      0
+     0      0      0      0      0      0      1      8      0      0
+     0      0      0      0      8      0      0      0      0      0
+     0      4      0      0      0      0      0      0      0      4
+     0      0      0      0      0      0      3      0      4      6
+     0      0      0      7      0      4      0      0      0      1
+     0      0      0      0      0      0      4      0      7      0
+
+Iteration 3:
+Breadth-first search:
+Π(1) = 0
+Π(4) = 1
+Π(6) = 4
+Π(9) = 6
+Improving path found: 0 → 1 → 4 → 6 → 9
+Flow in path: 1
+Residual graph after this iteration:
+
+Residual Graph
+     0     11      3      1      0      0      0      0      0      0
+     5      0      3      0      2      3      0      0      0      0
+     0      0      0      7      0      5      0      0      0      0
+     7      0      0      0      0      0      0      0      0      0
+     0      1      0      0      0      0      0      8      0      0
+     0      0      0      0      8      0      0      0      0      0
+     0      4      0      0      1      0      0      0      0      3
+     0      0      0      0      0      0      3      0      4      6
+     0      0      0      7      0      4      0      0      0      1
+     0      0      0      0      0      0      5      0      7      0
+
+Iteration 4:
+Breadth-first search:
+Π(1) = 0
+Π(4) = 1
+Π(7) = 4
+Π(9) = 7
+Improving path found: 0 → 1 → 4 → 7 → 9
+Flow in path: 2
+Residual graph after this iteration:
+
+Residual Graph
+     0      9      3      1      0      0      0      0      0      0
+     7      0      3      0      0      3      0      0      0      0
+     0      0      0      7      0      5      0      0      0      0
+     7      0      0      0      0      0      0      0      0      0
+     0      3      0      0      0      0      0      6      0      0
+     0      0      0      0      8      0      0      0      0      0
+     0      4      0      0      1      0      0      0      0      3
+     0      0      0      0      2      0      3      0      4      4
+     0      0      0      7      0      4      0      0      0      1
+     0      0      0      0      0      0      5      2      7      0
+
+Iteration 5:
+Breadth-first search:
+Π(1) = 0
+Π(5) = 1
+Π(4) = 5
+Π(7) = 4
+Π(9) = 7
+Improving path found: 0 → 1 → 5 → 4 → 7 → 9
+Flow in path: 3
+Residual graph after this iteration:
+
+Residual Graph
+     0      6      3      1      0      0      0      0      0      0
+    10      0      3      0      0      0      0      0      0      0
+     0      0      0      7      0      5      0      0      0      0
+     7      0      0      0      0      0      0      0      0      0
+     0      3      0      0      0      3      0      3      0      0
+     0      3      0      0      5      0      0      0      0      0
+     0      4      0      0      1      0      0      0      0      3
+     0      0      0      0      5      0      3      0      4      1
+     0      0      0      7      0      4      0      0      0      1
+     0      0      0      0      0      0      5      5      7      0
+
+Iteration 6:
+Breadth-first search:
+Π(2) = 0
+Π(5) = 2
+Π(4) = 5
+Π(7) = 4
+Π(9) = 7
+Improving path found: 0 → 2 → 5 → 4 → 7 → 9
+Flow in path: 1
+Residual graph after this iteration:
+
+Residual Graph
+     0      6      2      1      0      0      0      0      0      0
+    10      0      3      0      0      0      0      0      0      0
+     1      0      0      7      0      4      0      0      0      0
+     7      0      0      0      0      0      0      0      0      0
+     0      3      0      0      0      4      0      2      0      0
+     0      3      1      0      4      0      0      0      0      0
+     0      4      0      0      1      0      0      0      0      3
+     0      0      0      0      6      0      3      0      4      0
+     0      0      0      7      0      4      0      0      0      1
+     0      0      0      0      0      0      5      6      7      0
+
+Iteration 7:
+Breadth-first search:
+Π(2) = 0
+Π(5) = 2
+Π(4) = 5
+Π(7) = 4
+Π(6) = 7
+Π(9) = 6
+Improving path found: 0 → 2 → 5 → 4 → 7 → 6 → 9
+Flow in path: 2
+Residual graph after this iteration:
+
+Residual Graph
+     0      6      0      1      0      0      0      0      0      0
+    10      0      3      0      0      0      0      0      0      0
+     3      0      0      7      0      2      0      0      0      0
+     7      0      0      0      0      0      0      0      0      0
+     0      3      0      0      0      6      0      0      0      0
+     0      3      3      0      2      0      0      0      0      0
+     0      4      0      0      1      0      0      2      0      1
+     0      0      0      0      8      0      1      0      4      0
+     0      0      0      7      0      4      0      0      0      1
+     0      0      0      0      0      0      7      6      7      0
+
+Final residual graph:
+
+Final Residual Graph
+     0      6      0      1      0      0      0      0      0      0
+    10      0      3      0      0      0      0      0      0      0
+     3      0      0      7      0      2      0      0      0      0
+     7      0      0      0      0      0      0      0      0      0
+     0      3      0      0      0      6      0      0      0      0
+     0      3      3      0      2      0      0      0      0      0
+     0      4      0      0      1      0      0      2      0      1
+     0      0      0      0      8      0      1      0      4      0
+     0      0      0      7      0      4      0      0      0      1
+     0      0      0      0      0      0      7      6      7      0
+Max Flow = 20
+
+Max Flow (Ford-Fulkerson) : 20
